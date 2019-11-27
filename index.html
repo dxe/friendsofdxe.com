@@ -37,14 +37,25 @@ $(document).ready(function() {
       document.getElementById("page-home").classList.remove('hide');
       document.getElementById("page-fellowships").classList.add('hide');
       document.getElementById("page-principles").classList.add('hide');
+      document.getElementById("page-openings").classList.add('hide');
     }
     function showFellowships() {
       document.getElementById("page-home").classList.add('hide');
       document.getElementById("page-fellowships").classList.remove('hide');
+      document.getElementById("page-openings").classList.add('hide');
+      document.getElementById("page-principles").classList.add('hide');
     }
     function showPrinciples() {
       document.getElementById("page-home").classList.add('hide');
       document.getElementById("page-principles").classList.remove('hide');
+      document.getElementById("page-openings").classList.add('hide');
+      document.getElementById("page-fellowships").classList.add('hide');
+    }
+    function showOpenings() {
+      document.getElementById("page-home").classList.add('hide');
+      document.getElementById("page-principles").classList.add('hide');
+      document.getElementById("page-openings").classList.remove('hide');
+      document.getElementById("page-fellowships").classList.add('hide');
     }
 </script>
 
@@ -135,6 +146,10 @@ h2 {
   font-weight: bold;
 }
 
+h4 {
+  text-align: left;
+}
+
 </style>
 
 
@@ -167,7 +182,17 @@ h2 {
       		<p>You can donate via <a href="#open-funraise">Funraise</a> or check, payable to Friends of DxE, to: <br />Friends of DxE<br />PMB 328<br />2425 Channing Way, Ste. B<br />Berkeley, CA 94704</p>
 
           <br />
-          <p><center><a href="https://docs.google.com/forms/d/e/1FAIpQLSeRVyOB8QkxTKTrAcuS3v6n8jQc3ieg7VGLskFE7GmSSGBnMA/viewform?usp=sf_link" target="_blank">Submit request</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:info@friendsofdxe.com" target="_blank">Contact</a></center></p>
+          <div class="row">
+              <div class="col-sm">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeRVyOB8QkxTKTrAcuS3v6n8jQc3ieg7VGLskFE7GmSSGBnMA/viewform?usp=sf_link" target="_blank">Submit request</a>
+              </div>
+              <div class="col-sm">
+                <a href="#" onclick="showOpenings()">Join our team</a>
+              </div>
+              <div class="col-sm">
+                <a href="mailto:info@friendsofdxe.com" target="_blank">Contact</a>
+              </div>
+          </div>
       
         </div>
 
@@ -192,6 +217,62 @@ h2 {
       
         </div>
 
+         <div id="page-openings" class="hide">
+
+          <div class="back-button"><a href="#" onclick="showHome()"><- Back</a></div>
+
+          <h1>Join our team</h1>
+
+          <br />
+
+          <h3 style="text-align: left; font-weight: bold;">DEVELOPMENT DIRECTOR</h3>
+
+          <br />
+
+          <h2>OVERVIEW OF POSITION</h2>
+
+          <p>Friends of DxE, a 501c3 organization that supports the Direct Action Everywhere (DxE) grassroots network and other animal protection efforts, is seeking a Development Director to manage its rapidly-growing fundraising efforts. As the primary fundraiser for DxE -- the rapidly growing grassroot network that has garnered <a href="https://theintercept.com/2017/10/05/factory-farms-fbi-missing-piglets-animal-rights-glenn-greenwald/" target="_blank">international media</a>, passed groundbreaking <a href="https://www.usatoday.com/story/news/nation/2018/03/20/san-francisco-fur-sales-ban/444519002/" target="_blank">legislation</a>, and mobilized <a href="https://www.democracynow.org/2019/6/6/direct_action_everywhere_dxe_duck_farm" target="_blank">thousands of people to action</a> -- you will be at the forefront of our efforts to make animal rights a powerful social and political movement... and achieve <a href="https://medium.com/direct-action-everywhere-dxe/the-roadmap-to-animal-liberation-part-i-plant-the-flag-a02d5cd3fb11" target="_blank">an animal bill of rights in one generation</a>.</p>
+
+          <h2>WHY WE NEED YOU</h2>
+
+          <p>DxE has a dedicated leadership team and board -- including professors of law and medicine, community organizers with decades of experience, and leaders in tech and other industries -- but has historically refrained from hiring a professional fundraiser to maintain a grassroots feel. With a rapidly growing budget, however -- beyond $2 million in assets in 2019 -- and greater financial needs, we are for the first time planning to hire a Development Director. As Development Director for Friends of DxE, you would work with a team of dedicated volunteers to provide the resources the movement needs to fuel our engine for change, including three main areas:</p>
+
+          <ul>
+            <li>Monthly giving and membership</li>
+            <li>Major gifts and bequests</li>
+            <li>Facebook fundraisers</li>
+          </ul>
+
+          <p>DxE's fundraising is closely modeled after the Bernie Sanders campaign, with a strong base of motivated grassroots volunteers and supporters.</p>
+
+          <h2>JOB REQUIREMENTS</h2>
+
+          <ul>
+            <li>Track record of success in prior fundraising efforts, ideally for a similar nonprofit</li>
+            <li>Ability to lead and manage a grassroots fundraising team</li>
+            <li>Excellent verbal and written communication skills</li>
+            <li>Willingness to travel, with frequent evening and weekend work </li>
+            <li>Passion for the DxE <a href="http://dxe.io/values" target="_blank">core values and mission</a></li>
+            <li>Ability to drive projects forward independently</li>
+            <li>Positive and engaging personality</li>
+            <li>Comfort working in a rapidly-evolving startup environment</li>
+          </ul>
+
+          <h2>SPECIFICS</h2>
+
+          <ul>
+            <li>You will report to the Friends of DxE Board and key partners</li>
+            <li>You will supervise a volunteer team of grassroots fundraisers, as well as an administrative assistant. </li>
+            <li>You will be be able to work from home, though we generally ask key staff to join a weekly meeting in person at least once a week.</li>
+            <li>While we prefer someone in the Bay Area, we will consider strong remote candidates.</li> 
+            <li>Benefits include: full medical and optional dental and vision will be covered, opportunities to build a grassroots Development platform for animal rights, opportunities to develop and expand your own team over time, and a positive culture focused on radical candor.</li>
+            <li>Salary: $60,000 (negotiable)</li>
+          </ul>
+
+          <p>Please contact Friends of DxE at <a href="mailto:info@friendsofdxe.com">info@friendsofdxe.com</a> with a resume and statement of interest, of 500 words or less.</p>
+      
+        </div>
+
         <div id="page-principles" class="hide">
 
           <div class="back-button"><a href="#" onclick="showHome()"><- Back</a></div>
@@ -199,25 +280,25 @@ h2 {
           <h1>Values</h1>
           <br />
 
-			<h2>We are fiercely nonviolent.</h2>
+    			<h2>We are fiercely nonviolent.</h2>
 
-			<p>We directly challenge systems of oppression with the power of nonviolence. We have empathy for the individuals caught up in violent systems, seeking to bring them to the side of truth and justice. We accept suffering without retaliation for the sake of the cause. Even when tested, we respond nonviolently in act, word, and tone.</p>
+    			<p>We directly challenge systems of oppression with the power of nonviolence. We have empathy for the individuals caught up in violent systems, seeking to bring them to the side of truth and justice. We accept suffering without retaliation for the sake of the cause. Even when tested, we respond nonviolently in act, word, and tone.</p>
 
-			<h2>We build purposeful communities.</h2>
+    			<h2>We build purposeful communities.</h2>
 
-			<p>We foster inclusive communities that empower, support and build up fellow activists. It is everyone's responsibility to treat each person in our community with warmth and respect. We assume good faith, don't gossip, and call each other in, not out. Our community is the foundation on which the movement will grow. We encourage ordinary people to become the best activists they can be through training, mentorship, and support.</p>
+    			<p>We foster inclusive communities that empower, support and build up fellow activists. It is everyone's responsibility to treat each person in our community with warmth and respect. We assume good faith, don't gossip, and call each other in, not out. Our community is the foundation on which the movement will grow. We encourage ordinary people to become the best activists they can be through training, mentorship, and support.</p>
 
-			<h2>We do our homework.</h2>
+    			<h2>We do our homework.</h2>
 
-			<p>We draw on the best available evidence, from academia and beyond, to inform our activism. We seek diverse perspectives and also look outside the animal rights movement for lessons and inspiration. We measure and react. We're willing to innovate, experiment, take calculated risks, and fail; and we're eager to adapt and shift course based on outcomes.</p>
+    			<p>We draw on the best available evidence, from academia and beyond, to inform our activism. We seek diverse perspectives and also look outside the animal rights movement for lessons and inspiration. We measure and react. We're willing to innovate, experiment, take calculated risks, and fail; and we're eager to adapt and shift course based on outcomes.</p>
 
-			<h2>We lead by serving.</h2>
+    			<h2>We lead by serving.</h2>
 
-			<p>We create power for the movement by empowering the people around us. Our leadership team is first in line when a sacrifice is necessary. Ultimately, we are all serving the animals and the movement.</p>
+    			<p>We create power for the movement by empowering the people around us. Our leadership team is first in line when a sacrifice is necessary. Ultimately, we are all serving the animals and the movement.</p>
 
-			<h2>We aim to do exceptional work for the animals.</h2>
+    			<h2>We aim to do exceptional work for the animals.</h2>
 
-			<p>Our actions reflect the seriousness and urgency of our cause. Animal liberation is not a hobby; it's a social justice movement. We set clear goals and metrics and develop plans to achieve them. We are absurdly dependable, hold each other accountable, and get things done on time and to the best of our ability. We constantly seek feedback, commit to continuous learning, and respond to criticism with humility and grace. We believe in the duty to disagree, but we maintain compassion even when we disagree. We are radically candid.</p>
+    			<p>Our actions reflect the seriousness and urgency of our cause. Animal liberation is not a hobby; it's a social justice movement. We set clear goals and metrics and develop plans to achieve them. We are absurdly dependable, hold each other accountable, and get things done on time and to the best of our ability. We constantly seek feedback, commit to continuous learning, and respond to criticism with humility and grace. We believe in the duty to disagree, but we maintain compassion even when we disagree. We are radically candid.</p>
 
         </div>
 
